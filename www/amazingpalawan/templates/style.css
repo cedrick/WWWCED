@@ -1,0 +1,276 @@
+<style type="text/css" href="mystyle.css" media="screen"/>
+
+
+body {
+				margin:0; padding:0; height:100%; width:100%;
+				background-color:#edeef0;
+     }
+
+
+
+.container{
+			background-color:#edeef0;
+			margin:0 auto;
+			width:1300px;
+			bottom:0;
+}
+
+.header{
+			background-color:0072ff;
+			height:4px;
+	}
+	
+.spacer{ 
+		background-color:#edeef0;
+	}
+
+
+.back{
+		position:fixed; left:0; top:0; z-index:1; height:100%; width:100%;
+}
+
+.subheader{
+			background-color:#edeef0;
+}
+.content{ 
+          	background-color:#edeef0;
+          
+          	
+       	}	
+       	
+.content_about{ 
+          	background-color:#edeef0;
+          	width:899px;
+          	height:575px;
+       	}
+       	
+.content_home{ 
+          	background-color:#edeef0;
+          	width:899px;
+          	height:650px;
+       	}	
+
+
+.sec_a{
+			width:238px;
+			height:412px;
+			position:absolute;
+			top:400px;
+			left:300px;
+			background-color:#0469A3;
+			border-radius: 6px;	
+}
+
+.sec_b{
+			width:238px;
+			height:412px;
+			position:absolute;
+			top:400px;
+			left:550px;
+			background-color:#1E94A8;
+			border-radius: 6px;	
+}
+
+.sec_c{
+			width:238px;
+			height:412px;
+			position:absolute;
+			top:400px;
+			left:800px;
+			background-color:#0F9676;
+			border-radius: 6px;	
+}
+
+.sec_d{
+			width:740px;
+			height:120px;
+			position:absolute;
+			top:820px;
+			left:300px;
+			background-color:#7DB20B;
+			border-radius: 6px;	
+}
+
+.sec_home_a{
+			width:238px;
+			height:500px;
+			position:absolute;
+			top:400px;
+			left:300px;
+			background-color:#0469A3;
+			border-radius: 6px;	
+}
+
+.sec_home_b{
+			width:238px;
+			height:500px;
+			position:absolute;
+			top:400px;
+			left:550px;
+			background-color:#1E94A8;
+			border-radius: 6px;	
+}
+
+.sec_home_c{
+			width:238px;
+			height:500px;
+			position:absolute;
+			top:400px;
+			left:800px;
+			background-color:#0F9676;
+			border-radius: 6px;	
+}
+
+.sec_home_e{
+			width:238px;
+			height:500px;
+			position:absolute;
+			top:400px;
+			left:800px;
+			background-color:#0F9676;
+			border-radius: 6px;	
+}
+
+.sec_home_d{
+			width:740px;
+			height:108px;
+			position:absolute;
+			top:910px;
+			left:300px;
+			background-color:#7DB20B;
+			border-radius: 6px;	
+}
+.navigation{ 
+			 position: fixed; 
+			 z-index: 1000 ;		
+			}
+
+.top{ 
+			background-color:#0A6184;
+			width:366px;
+			height:20px;	
+		}
+
+.form_lbl{ 
+						float: left;
+						margin-left: 20px;
+						width: 30%;
+					}
+
+.form_field{ 
+						 float: left;
+   					 width: 30%;
+					 }
+					
+.submit{
+				 bottom:450px;
+				 /*position: absolute;*/
+				 float:right;
+				 right: 500px; 
+			 }
+		
+.
+	ul{ 
+			margin: 40px 0 0 0;
+			padding:0;
+			list-style:none;
+			width:130px;
+	}
+	 
+li{
+	  padding:30px 10px;
+	  text-shadow: 4px 4px 4px #000000;
+	}
+	
+a:link{
+		COLOR:#0072ff;
+}
+
+	
+
+a:visited{
+		COLOR:#0072ff;
+}
+	
+.quick_links{
+			position:absolute;
+			top:65px;
+			left:120px;
+}
+
+
+	   
+.footer{
+		background-color:#00a8ff;
+		height:200px;  
+		 	
+	   }
+	   
+.foot{
+		width:214px; 	
+	  }
+	  
+#home_nav:hover{
+color: #FCDC31;
+background: #0072ff;
+
+}
+
+#hotel_nav:hover{
+color: #FCDC31;
+background: #0072ff;
+
+}
+
+
+
+#pack_nav:hover{
+color: #FCDC31;
+background: #0072ff;
+
+}
+
+#about_nav:hover{
+color: #FCDC31;
+background: #0072ff;
+
+}
+
+
+#gallery_nav:hover{
+color: #FCDC31;
+background: #0072ff;
+
+}
+
+
+	
+
+body#home a#home_nav,
+body#hotels a#hotel_nav,
+body#gallery a#gallery_nav,
+body#packages a#pack_nav,
+body#about a#about_nav  {
+color: #FCDC31;
+background: #0072ff;
+}
+				
+
+.tooltip {
+					background-color:#000;
+					border:1px solid #fff;
+					padding:10px 15px;
+					width:300px;
+					display:none;
+					color:#fff;
+					text-align:center;
+					font-size:12px;
+					font-family: Tahoma, Geneva, sans-serif;
+				
+					/* outline radius for mozilla/firefox only */
+					-moz-box-shadow:0 0 10px #000;
+					-webkit-box-shadow:0 0 10px #000;
+					}
+	
+	
+</style>

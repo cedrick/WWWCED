@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.6
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 16, 2012 at 11:18 AM
+-- Server version: 5.0.51
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `dbmseufcics`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbladmin`
+--
+
+CREATE TABLE `tbladmin` (
+  `username` varchar(25) NOT NULL,
+  `password` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbladmin`
+--
+
+INSERT INTO `tbladmin` (`username`, `password`) VALUES
+('admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblemployee`
+--
+
+CREATE TABLE `tblemployee` (
+  `username` varchar(25) NOT NULL,
+  `password` varchar(25) NOT NULL,
+  `lastname` varchar(25) NOT NULL,
+  `firstname` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblemployee`
+--
+
+INSERT INTO `tblemployee` (`username`, `password`, `lastname`, `firstname`) VALUES
+('user', 'user', 'user', 'user');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblinventory`
+--
+
+CREATE TABLE `tblinventory` (
+  `product_name` varchar(20) NOT NULL,
+  `product_code` varchar(20) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `price` int(20) NOT NULL,
+  `stocks` int(20) NOT NULL,
+  `id` int(11) NOT NULL auto_increment,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `tblinventory`
+--
+
+INSERT INTO `tblinventory` (`product_name`, `product_code`, `category`, `price`, `stocks`, `id`) VALUES
+('asa', '12345', 'we', 45, 35, 1),
+('asa2', '123456', 'we2', 56, 100, 2);

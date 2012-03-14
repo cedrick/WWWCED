@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mother
+{
+	height: 1000px;
+	background-repeat: no-repeat;
+	width: 1000px;
+	background-position: 0px 52px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-right:60px;
+	background-image: url(homebackground.JPG);	
+}
+
+
+#header
+{
+	height: 80px;
+	background-position:left;
+	width: 980px;
+
+}
+
+
+body
+{
+	background-image:url(blueheader.JPG);
+	background-position:top;
+	background-repeat:no-repeat;
+	
+}
+
+
+#sale
+{
+	height: 700px;
+	width: 820px;
+	padding-left: 135px;
+	
+
+}
+
+#item
+{
+	background-position:center;
+	width: 1000px;
+	height: 50px;
+	padding-left: 40px;
+
+}

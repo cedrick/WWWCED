@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Sample HTML form for sending SMS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body> 
+<form action="send.php" method="post" name="form1" target="_blank">
+ <table>
+<tr>
+<td>UserName</td>
+<td><input type="text" name="USERNAME" >  </td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="text" name="PASSWORD" >  </td>
+</tr>
+
+
+<tr>
+<td>From</td>
+<td><input type="text" name="FROM" >  </td>
+</tr>
+
+<tr>
+<td>To</td>
+<td><input type="text" name="TO" >  </td>
+</tr>
+
+<tr>
+<td>Message</td>
+<td><input type="text" name="MESSAGE" >  </td>
+</tr>
+
+<tr>
+<td>Message</td>
+<td><input type="Submit" name="send"  value="Send">  </td>
+</tr>
+</table>
+</form> 
+<form action="send.php?balance=1" method="post" name="form2" target="_blank">
+  <input type="submit" name="Submit" value="Check SMS balance">
+</form>
+
+</html>

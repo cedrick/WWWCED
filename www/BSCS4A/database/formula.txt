@@ -1,0 +1,18 @@
+senior citizen discount= 0.05
+
+$senior=  0.05;
+$vat = 0.12
+
+$tax = $total*$vat;
+
+$discount = $total*$senior;
+
+$ftotal= $total-$discount-$tax;
+
+
+
+
+
+
+
+

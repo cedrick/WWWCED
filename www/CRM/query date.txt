@@ -1,0 +1,1 @@
+select rdate, DATE_FORMAT(STR_TO_DATE(rdate, '%m/%d/%Y %l:%i:%s %p') , '%Y-%m-% %l:%i:%s %p ')as formatted_date FROM `crm_main`.`crm_import`;

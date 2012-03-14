@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mother
+{
+	background-repeat: no-repeat;
+	background-position:center 30px;
+	background-image:url(brimhall_store_icon2.jpg);
+	height: 500px;
+	width: 1000px;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+body
+{
+	background-image:url(blueheader.JPG);
+	background-position:top;
+	background-repeat:no-repeat;
+	
+}
+
+
+#choose
+{
+	height: 300px;
+	width: 900px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-left: 100px;	
+	
+
+}

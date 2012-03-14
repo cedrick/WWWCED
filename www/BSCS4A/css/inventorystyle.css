@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mother
+{
+	height: 1000px;
+	background-repeat: no-repeat;
+	width: 1000px;
+	background-position: 0px 52px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-right:60px;
+	background-image: url(homebackground.JPG);	
+}
+
+
+#header
+{
+	height: 60px;
+	background-position:left;
+	width: 980px;
+
+}
+
+
+body
+{
+	background-image:url(blueheader.JPG);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+
+#search
+{
+	height: 50px;
+	width: 950px;
+	padding-left: 60px;
+
+}

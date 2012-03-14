@@ -1,0 +1,62 @@
+body{background:#e8e8e8;margin:0px;}
+*{font-family:arial, helvetica, sans-serif;font-size:12px;color:#222;}
+a img{border:0px;}
+input, select, textarea{border:solid 1px #788;color:#424c65;}
+small{font-size:10px;color:#424c65;}
+th{background:#206080;color:#ffffff;padding:2px;border-top:solid 1px #f8f8f8;border-bottom:solid 1px #788;}
+th b{color:#fff;}
+.stronglink{color:#248;font-size:13px;font-weight:bold;}
+.blt{color:#9ab;}
+.loginform{border-top:solid 1px #6090c3;border-bottom:solid 1px #6090c3;margin-top:20px;}
+.tlogin{width:400px;background:url(images/loginbg.jpg);}
+#header td{background:#6090c3;color:#ffffff;}
+#footer td, #footer a{background:#6090c3;color:#ffffff;font-size:10px;text-decoration:none;}
+#header h4{font-size:18px;color:#ffffff;margin-bottom:0px;}
+#adminmenu{background:#ecf1f8;border-bottom:solid 1px #6090c3;}
+#adminmenu a{margin-right:10px;display:block;text-decoration:none;color:#204060;font-weight:bold;}
+#adminmenu a:hover{color:#902020;}
+.admin_content{margin-top:20px;padding:10px;}
+td.tvalue{border-top:solid 1px #f8f8f8;border-bottom:solid 1px #788;background:#e8ecf3;padding:2px;}
+td.btvalue{border-top:solid 1px #f8f8f8;border-bottom:solid 1px #788;background:#e8ecf3;padding:2px;font-size:14px;}
+td.btvalue a{font-size:14px;text-decoration:none;color:#222;}
+td.btvalue a:hover{color:#902020;}
+td.tvalue_lnk{border-top:solid 1px #f8f8f8;border-bottom:solid 1px #788;background:#e8ecf3;padding:2px;cursor:pointer;}
+#hdr_report{padding:4px;border-top:solid 1px #ccc;border-bottom:solid 1px #ccc;}
+.pset{border:solid 1px #788;background:#f1f3ff;width:14px;}
+.pset a{text-decoration:none;font-weight:bold;display:block;height:14px;text-align:center;color:#248;}
+#pageset *{font-size:11px;}
+
+/***
+Sales frontend
+***/
+#fe_sales{border:solid 2px #6090c3;}
+#fe_sales form{margin-bottom:0px;}
+td.keybn{width:64px;height:64px;padding:0px;text-align:center;border:solid 1px #788;background-image:url(images/keybn.png);cursor:pointer;}
+td.keybn_click{width:64px;height:64px;padding:0px;text-align:center;border:solid 1px #788;background-image:url(images/keybn2.png);cursor:pointer;}
+td.keybh{width:128px;height:64px;padding:0px;text-align:center;border:solid 1px #788;background-image:url(images/keybh.png);cursor:pointer;}
+td.keybh_click{width:128px;height:64px;padding:0px;text-align:center;border:solid 1px #788;background-image:url(images/keybh2.png);cursor:pointer;}
+td.keybv{font-size:10px;width:64px;height:128px;padding:0px;text-align:center;border:solid 1px #788;background-image:url(images/keybv.png);cursor:pointer;}
+td.keybv_click{font-size:10px;width:64px;height:128px;padding:0px;text-align:center;border:solid 1px #788;background-image:url(images/keybv2.png);cursor:pointer;}
+#sales_items{height:150px;overflow:auto;border:solid 1px #788;}
+#tbl_sitems tr.selected td.tvalue{background:#cc8022;}
+#sales_items td.tvalue{padding:0px;padding-left:2px;}
+.inp2{text-align:right;}
+td.scurrency1, td.scurrency2{width:80px;text-align:right;border:solid 1px #788;font-weight:bold;}
+td.scurrency1{color:#555;}
+td.scurrency2{color:#922;}
+#fe_categories{border:solid 2px #6090c3;height:100%;}
+table.tabcategory{width:100px;height:100px;border:solid 1px #cccccc;margin:5px;float:left;text-align:center;cursor:pointer;}
+#fe_items{border:solid 2px #6090c3;height:100%;}
+table.tabitem{width:100px;height:100px;border:solid 1px #cccccc;margin:5px;float:left;text-align:center;cursor:pointer;}
+#customerDiv0, #customerDiv1, #customerDiv2, #customerButton{border:solid 1px #778;}
+#customerDiv0{width:410px;height:18px;}
+#customerButton{width:100px;height:20px;}
+#customerDiv1, #customerDiv2{padding:5px;position:absolute;width:500px;border:solid 1px #788;margin-top:-1px;height:380px;overflow:auto;display:none;background:#f1f3f5;}
+#customer_menu{text-align:right;border-bottom:solid 1px #ccc;margin-bottom:4px;}
+#customer_menu a{text-decoration:none;}
+#customer_menu a:hover{color:#922;}
+#findcustomertext{width:300px;}
+#tfinalsale td{border:solid 1px #ccc;}
+b.tdtotal{color:#922;}
+#salediv{margin:20px;}
+.sale_value{border:0px;text-align:right;}

@@ -1,0 +1,14 @@
+application date= auto generated
+
+activation date = calendar
+
+application time = input time
+
+adsl no = input
+mobile no= input
+
+no duplicate phone number ajax
+
+agent id = input
+
+

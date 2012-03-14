@@ -1,0 +1,87 @@
+/* CSS Document */
+body {
+				margin:0;
+     }
+
+
+.header{ 
+				 background-image:url(images/gradient.png); 
+				 background-repeat:repeat-x;
+				 height:78px;
+			 }
+.liner{ 
+				border-top:1px solid gray;
+       }
+
+	   
+	   
+.footer{ 
+					border-top:1px solid gray;
+					clear: both;
+					color: #9EC1CF;
+					font-size: 11px;
+					text-align: center;
+				}
+
+.login {
+			 height: 250px;
+			 width: 366px;
+			}
+
+.top {
+    background-color: #7B7A79;
+    height: 20px;
+    width: 366px;
+}
+
+.logback {
+    background-color: #e8fcb3;
+    height: 240px;
+    width: 366px;
+}
+
+
+.call{
+	float:right;
+	margin-top:-75px;
+	margin-right:15px;
+	width:403px;
+    height:78px;
+}
+
+
+.logout{
+		float:right;
+		margin-top:-20px;
+		margin-right:400px;
+		width:174px;
+	    height:19px;
+}
+
+.container{
+			margin-left:235px;
+			
+		}
+
+.data{
+		background-color: #699B1D;
+	}
+.rdate{
+		background-color: #FFFFFF;
+	}
+	
+.date_report{
+    			width:802px;
+				margin-left:230px;
+			}
+.date_example{
+				width:142px;
+    			height:16px;
+				margin-left:20px;
+			}
+.date_finder{
+				width:335px;
+    			height:31px;
+    			background-color: #699B1D;
+		  }
+

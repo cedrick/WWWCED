@@ -1,0 +1,189 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.6
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 01, 2012 at 02:15 PM
+-- Server version: 5.0.51
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `dbmseufcics`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbladmin`
+--
+
+CREATE TABLE `tbladmin` (
+  `username` varchar(25) NOT NULL,
+  `password` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbladmin`
+--
+
+INSERT INTO `tbladmin` (`username`, `password`) VALUES
+('admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblemployee`
+--
+
+CREATE TABLE `tblemployee` (
+  `username` varchar(25) NOT NULL,
+  `password` varchar(25) NOT NULL,
+  `lastname` varchar(25) NOT NULL,
+  `firstname` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblemployee`
+--
+
+INSERT INTO `tblemployee` (`username`, `password`, `lastname`, `firstname`) VALUES
+('user', 'user', 'user', 'user');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblinventory`
+--
+
+CREATE TABLE `tblinventory` (
+  `id` int(11) NOT NULL auto_increment,
+  `product_code` varchar(20) NOT NULL,
+  `product_name` varchar(20) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `price` int(20) NOT NULL,
+  `stocks` int(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `tblinventory`
+--
+
+INSERT INTO `tblinventory` (`id`, `product_code`, `product_name`, `category`, `price`, `stocks`) VALUES
+(1, '#abcde', 'Sprite', 'Beverages', 10, -3),
+(2, '#abcde', 'Royal', 'Beverages', 10, 11),
+(3, '#abcdf', 'Tortillos', 'Cracker', 5, 9),
+(4, '#abcdg', 'Kiwi', 'Shoe Shine', 6, 15),
+(5, '#abcdh', 'Johnsons Baby Powder', 'Powder', 10, 18);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_bir`
+--
+
+CREATE TABLE `tbl_bir` (
+  `id` int(11) NOT NULL auto_increment,
+  `bir_no` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbl_bir`
+--
+
+INSERT INTO `tbl_bir` (`id`, `bir_no`) VALUES
+(1, 16);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_sale`
+--
+
+CREATE TABLE `tbl_sale` (
+  `id` int(11) NOT NULL auto_increment,
+  `trans_id` int(50) NOT NULL,
+  `bir_no` int(11) NOT NULL,
+  `product_code` varchar(20) NOT NULL,
+  `product_name` varchar(20) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `price` int(20) NOT NULL,
+  `qty` int(20) NOT NULL,
+  `total` int(50) NOT NULL,
+  `tag` varchar(50) NOT NULL default 'GOOD',
+  `sale_date` timestamp NOT NULL default '0000-00-00 00:00:00' on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=63 ;
+
+--
+-- Dumping data for table `tbl_sale`
+--
+
+INSERT INTO `tbl_sale` (`id`, `trans_id`, `bir_no`, `product_code`, `product_name`, `category`, `price`, `qty`, `total`, `tag`, `sale_date`) VALUES
+(47, 0, 1, '#abcde', 'Sprite', 'Beverages', 10, 1, 10, 'GOOD', '2012-03-01 20:59:59'),
+(48, 0, 1, '#abcdf', 'Tortillos', 'Cracker', 5, 2, 10, 'GOOD', '2012-03-01 21:00:06'),
+(49, 0, 2, '#abcdg', 'Kiwi', 'Shoe Shine', 6, 5, 30, 'GOOD', '2012-03-01 21:00:37'),
+(50, 0, 2, '#abcdh', 'Johnsons Baby Powder', 'Powder', 10, 2, 20, 'GOOD', '2012-03-01 21:01:01'),
+(51, 0, 3, '#abcde', 'Sprite', 'Beverages', 10, 1, 10, 'GOOD', '2012-03-01 21:01:18'),
+(52, 0, 3, '#abcde', 'Sprite', 'Beverages', 10, 2, 20, 'GOOD', '2012-03-01 21:01:20'),
+(53, 0, 4, '#abcde', 'Sprite', 'Beverages', 10, 1, 10, 'GOOD', '2012-03-01 21:10:10'),
+(54, 0, 4, '#abcdf', 'Tortillos', 'Cracker', 5, 2, 10, 'GOOD', '2012-03-01 21:10:22'),
+(55, 0, 6, '#abcde', 'Sprite', 'Beverages', 10, 1, 10, 'GOOD', '2012-03-01 21:39:13'),
+(56, 0, 6, '#abcde', 'Royal', 'Beverages', 10, 2, 20, 'GOOD', '2012-03-01 21:39:24'),
+(57, 0, 8, '#abcde', 'Sprite', 'Beverages', 10, 5, 50, 'GOOD', '2012-03-01 21:58:31'),
+(58, 0, 8, '#abcdf', 'Tortillos', 'Cracker', 5, 5, 25, 'GOOD', '2012-03-01 21:58:39'),
+(59, 0, 14, '#abcde', 'Sprite', 'Beverages', 10, 2, 20, 'GOOD', '2012-03-01 22:06:10'),
+(60, 0, 14, '#abcde', 'Sprite', 'Beverages', 10, 5, 50, 'GOOD', '2012-03-01 22:06:14'),
+(61, 0, 16, '#abcde', 'Royal', 'Beverages', 10, 5, 50, 'GOOD', '2012-03-01 22:09:45'),
+(62, 0, 16, '#abcdf', 'Tortillos', 'Cracker', 5, 1, 5, 'GOOD', '2012-03-01 22:09:51');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_temp`
+--
+
+CREATE TABLE `tbl_temp` (
+  `trans_id` int(50) NOT NULL auto_increment,
+  `bir_no` int(11) NOT NULL,
+  `product_code` varchar(20) NOT NULL,
+  `product_name` varchar(20) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `price` int(20) NOT NULL,
+  `qty` int(20) NOT NULL,
+  `total` int(50) NOT NULL,
+  `sale_date` varchar(20) NOT NULL,
+  `tag` varchar(50) NOT NULL default 'GOOD',
+  PRIMARY KEY  (`trans_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+
+--
+-- Dumping data for table `tbl_temp`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_trans`
+--
+
+CREATE TABLE `tbl_trans` (
+  `id` int(50) NOT NULL auto_increment,
+  `total` int(50) NOT NULL,
+  `payment` int(50) NOT NULL,
+  `discount` int(50) NOT NULL,
+  `vat` int(50) NOT NULL,
+  `rchange` int(50) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `tbl_trans`
+--
+
+INSERT INTO `tbl_trans` (`id`, `total`, `payment`, `discount`, `vat`, `rchange`) VALUES
+(1, 0, 0, 0, 0, 0);

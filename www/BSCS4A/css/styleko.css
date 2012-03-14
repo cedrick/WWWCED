@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mother
+{
+	height: 600px;
+	background-image: url(dialog.JPG);
+	background-repeat: no-repeat;
+	width: 800px;
+	background-position: center;
+	background-position:top;
+	margin-top:auto;
+	margin-right: auto;
+	margin-bottom:auto;
+	margin-left: auto;
+}
+
+#header
+{
+	
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	
+	
+
+}
